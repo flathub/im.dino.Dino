@@ -49,3 +49,5 @@ modules:
         commit: 9838d5679470d1add098accaeae8eaf0ee3c58ee
       - type: patch
         path: dino_appdata.patch
+      - type: patch
+        path: symbolic_icon.patch

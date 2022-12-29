@@ -14,6 +14,10 @@ finish-args:
   - --talk-name=org.freedesktop.Notifications
 modules:
   - name: gspell
+    config-opts:
+      - --disable-shared
+      - --enable-static
+      - --enable-gtk-doc=no
     cleanup:
       - /bin
     sources:

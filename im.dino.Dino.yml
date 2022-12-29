@@ -39,7 +39,6 @@ modules:
       - /lib
     sources:
       - type: git
-        path: plugins/signal-protocol/libsignal-protocol-c
         url: https://github.com/WhisperSystems/libsignal-protocol-c.git
         tag: v2.3.3
   - name: qrencode

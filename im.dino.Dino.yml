@@ -46,11 +46,12 @@ modules:
   - name: dino
     buildsystem: cmake-ninja
     builddir: true
+    config-opts:
+      - -DSOUP_VERSION=2
     sources:
-      - type: git
-        url: https://github.com/dino/dino.git
-        tag: v0.3.0
-        commit: 9838d5679470d1add098accaeae8eaf0ee3c58ee
+      - type: archive
+        url: https://github.com/dino/dino/releases/download/v0.3.1/dino-0.3.1.tar.gz
+        sha256: aa4cf890a6353cf27f00d6cf4cd7a7a55291530138a4c60a409cc716e7c546e7
       - type: patch
         path: dino_appdata.patch
       - type: patch

@@ -1,7 +1,7 @@
 ---
 app-id: im.dino.Dino
 runtime: org.gnome.Platform
-runtime-version: "42"
+runtime-version: "43"
 sdk: org.gnome.Sdk
 command: dino
 finish-args:
@@ -9,30 +9,45 @@ finish-args:
   - --socket=fallback-x11
   - --socket=wayland
   - --socket=pulseaudio
+  - --socket=gpg-agent
   - --share=network
   - --device=all # required for audio/video calling
   - --talk-name=org.freedesktop.Notifications
 modules:
   - name: gspell
+    config-opts:
+      - --disable-shared
+      - --enable-static
+      - --enable-gtk-doc=no
     cleanup:
       - /bin
+      - /include
+      - /lib
+      - /share/gir-1.0
+      - /share/gtk-doc
+      - /share/vala
     sources:
       - type: archive
-        url: https://download.gnome.org/sources/gspell/1.8/gspell-1.8.3.tar.xz
-        sha256: 5ae514dd0216be069176accf6d0049d6a01cfa6a50df4bc06be85f7080b62de8
+        url: https://download.gnome.org/sources/gspell/1.12/gspell-1.12.0.tar.xz
+        sha256: 40d2850f1bb6e8775246fa1e39438b36caafbdbada1d28a19fa1ca07e1ff82ad
   - name: libsignal-protocol-c
     buildsystem: cmake
     config-opts:
       - -DCMAKE_C_FLAGS=-fPIC
+    cleanup:
+      - /include
+      - /lib
     sources:
       - type: git
-        path: plugins/signal-protocol/libsignal-protocol-c
         url: https://github.com/WhisperSystems/libsignal-protocol-c.git
         tag: v2.3.3
   - name: qrencode
     buildsystem: cmake-ninja
     cleanup:
       - /bin
+      - /include
+      - /lib
+      - /share/man
     config-opts:
       - -DCMAKE_C_FLAGS=-fPIC
     sources:
@@ -42,11 +57,15 @@ modules:
   - name: dino
     buildsystem: cmake-ninja
     builddir: true
+    config-opts:
+      - -DSOUP_VERSION=2
+    cleanup:
+      - /include
+      - /share/vala
     sources:
-      - type: git
-        url: https://github.com/dino/dino.git
-        tag: v0.3.0
-        commit: 9838d5679470d1add098accaeae8eaf0ee3c58ee
+      - type: archive
+        url: https://github.com/dino/dino/releases/download/v0.3.1/dino-0.3.1.tar.gz
+        sha256: aa4cf890a6353cf27f00d6cf4cd7a7a55291530138a4c60a409cc716e7c546e7
       - type: patch
         path: dino_appdata.patch
       - type: patch

@@ -13,7 +13,6 @@ finish-args:
   - --share=network
   - --device=all # required for audio/video calling
   - --talk-name=org.freedesktop.Notifications
-  - --device=dri
 modules:
   - name: libsignal-protocol-c
     buildsystem: cmake-ninja

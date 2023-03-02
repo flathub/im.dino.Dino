@@ -48,7 +48,5 @@ modules:
       - /share/vala
     sources:
       - type: archive
-        url: https://github.com/dino/dino/releases/download/v0.4.0/dino-0.4.0.tar.gz
-        sha256: c86087328dcbb1da2187db2ee1e1f9fa37b03534356b85f6b6c86030653db784
-      - type: patch
-        path: symbolic_icon.patch
+        url: https://github.com/dino/dino/releases/download/v0.4.1/dino-0.4.1.tar.gz
+        sha256: c108d98719076372b3aac2040f41875f158ae162906727999c4dc888f64fb38b

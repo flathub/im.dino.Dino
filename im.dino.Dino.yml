@@ -42,7 +42,7 @@ modules:
     buildsystem: cmake-ninja
     builddir: true
     config-opts:
-      - -DSOUP_VERSION=2
+      - -DSOUP_VERSION=3
     cleanup:
       - /include
       - /share/vala

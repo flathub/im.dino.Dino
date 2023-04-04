@@ -1,7 +1,7 @@
 ---
 app-id: im.dino.Dino
 runtime: org.gnome.Platform
-runtime-version: "43"
+runtime-version: "44"
 sdk: org.gnome.Sdk
 command: dino
 finish-args:
@@ -42,11 +42,11 @@ modules:
     buildsystem: cmake-ninja
     builddir: true
     config-opts:
-      - -DSOUP_VERSION=2
+      - -DSOUP_VERSION=3
     cleanup:
       - /include
       - /share/vala
     sources:
       - type: archive
-        url: https://github.com/dino/dino/releases/download/v0.4.1/dino-0.4.1.tar.gz
-        sha256: c108d98719076372b3aac2040f41875f158ae162906727999c4dc888f64fb38b
+        url: https://github.com/dino/dino/releases/download/v0.4.2/dino-0.4.2.tar.gz
+        sha256: e1b1527028073b95c3abec41cb02ec60c1ee0a76da2c57bf2456afb8a3cd7eed

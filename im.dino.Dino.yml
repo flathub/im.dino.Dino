@@ -23,8 +23,8 @@ modules:
       - /lib
     sources:
       - type: git
-        url: https://github.com/WhisperSystems/libsignal-protocol-c.git
-        tag: v2.3.3
+        url: https://github.com/mar-v-in/libsignal-protocol-c.git
+        tag: v2.3.3.1
   - name: qrencode
     buildsystem: cmake-ninja
     cleanup:

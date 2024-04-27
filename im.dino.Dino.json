@@ -50,7 +50,13 @@
                 {
                     "type": "archive",
                     "url": "https://fukuchi.org/works/qrencode/qrencode-4.1.1.tar.gz",
-                    "sha512": "209bb656ae3f391b03c7b3ceb03e34f7320b0105babf48b619e7a299528b8828449e0e7696f0b5db0d99170a81709d0518e34835229a748701e7df784e58a9ce"
+                    "sha512": "209bb656ae3f391b03c7b3ceb03e34f7320b0105babf48b619e7a299528b8828449e0e7696f0b5db0d99170a81709d0518e34835229a748701e7df784e58a9ce",
+                    "x-checker-data": {
+            "type": "anitya",
+            "project-id": 12834,
+            "stable-only": true,
+            "url-template": "https://fukuchi.org/works/qrencode/qrencode-$version.tar.gz"
+                    }
                 }
             ]
         },
@@ -69,7 +75,13 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/dino/dino/releases/download/v0.4.3/dino-0.4.3.tar.gz",
-                    "sha256": "a615fc14d27402316d45036d55471d5ccb68194390e0654efb192f8de57b4b06"
+                    "sha256": "a615fc14d27402316d45036d55471d5ccb68194390e0654efb192f8de57b4b06",
+                    "x-checker-data": {
+            "type": "anitya",
+            "project-id": 18608,
+            "stable-only": true,
+            "url-template": "https://github.com/dino/dino/releases/download/v$version/dino-$version.tar.gz"
+                    }
                 }
             ]
         }

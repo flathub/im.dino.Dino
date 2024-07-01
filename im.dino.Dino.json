@@ -51,7 +51,7 @@
                     "type": "archive",
                     "url": "https://fukuchi.org/works/qrencode/qrencode-4.1.1.tar.gz",
                     "sha512": "209bb656ae3f391b03c7b3ceb03e34f7320b0105babf48b619e7a299528b8828449e0e7696f0b5db0d99170a81709d0518e34835229a748701e7df784e58a9ce",
-                    "x-data-checker": {
+                    "x-checker-data": {
                         "type": "anitya",
                         "project-id": 12834,
                         "stable-only": true,
@@ -76,7 +76,7 @@
                     "type": "archive",
                     "url": "https://github.com/dino/dino/releases/download/v0.4.4/dino-0.4.4.tar.gz",
                     "sha256": "31894ce7fa9aa8bfa7c43986a5369f384801f336e89fc0e2e2ab2443f1f67dff",
-                    "x-data-checker": {
+                    "x-checker-data": {
                         "type": "anitya",
                         "project-id": 18608,
                         "stable-only": true,

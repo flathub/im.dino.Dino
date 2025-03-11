@@ -74,8 +74,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/dino/dino/releases/download/v0.4.4/dino-0.4.4.tar.gz",
-                    "sha256": "31894ce7fa9aa8bfa7c43986a5369f384801f336e89fc0e2e2ab2443f1f67dff",
+                    "url": "https://github.com/dino/dino/releases/download/v0.4.5/dino-0.4.5.tar.gz",
+                    "sha256": "81e3ae7be3a361ac25f06d7c63ee42ef0b646d82253b5339efe0ba3111013b89",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 18608,

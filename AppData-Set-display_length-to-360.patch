@@ -1,0 +1,40 @@
+From 5af1b2cd0dfd4fce0881d7ec3e8c26a2c29ecbdb Mon Sep 17 00:00:00 2001
+From: Marvin W <git@larma.de>
+Date: Fri, 11 Apr 2025 21:46:32 +0200
+Subject: [PATCH] AppData: Set display_length to 360
+
+"small" was removed about a year ago.
+---
+ main/data/im.dino.Dino.appdata.xml    | 2 +-
+ main/data/im.dino.Dino.appdata.xml.in | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/main/data/im.dino.Dino.appdata.xml b/main/data/im.dino.Dino.appdata.xml
+index 1153f554..df053fa2 100644
+--- a/main/data/im.dino.Dino.appdata.xml
++++ b/main/data/im.dino.Dino.appdata.xml
+@@ -227,7 +227,7 @@
+     <control>pointing</control>
+     <control>keyboard</control>
+     <control>touch</control>
+-    <display_length>small</display_length>
++    <display_length>360</display_length>
+   </supports>
+   <project_license>GPL-3.0+</project_license>
+   <developer id="im.dino">
+diff --git a/main/data/im.dino.Dino.appdata.xml.in b/main/data/im.dino.Dino.appdata.xml.in
+index 6762770c..32f4a45d 100644
+--- a/main/data/im.dino.Dino.appdata.xml.in
++++ b/main/data/im.dino.Dino.appdata.xml.in
+@@ -64,7 +64,7 @@
+     <control>pointing</control>
+     <control>keyboard</control>
+     <control>touch</control>
+-    <display_length>small</display_length>
++    <display_length>360</display_length>
+   </supports>
+   <project_license>GPL-3.0+</project_license>
+   <developer id="im.dino">
+-- 
+2.49.0
+

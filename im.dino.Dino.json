@@ -133,6 +133,10 @@
                         "stable-only": true,
                         "url-template": "https://github.com/dino/dino/releases/download/v$version/dino-$version.tar.gz"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "AppData-Set-display_length-to-360.patch"
                 }
             ]
         }

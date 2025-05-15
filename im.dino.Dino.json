@@ -29,8 +29,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/protocolbuffers/protobuf/releases/download/v30.2/protobuf-30.2.tar.gz",
-                    "sha512": "555d1b18d175eeaf17f3879f124d33080f490367840d35b34bfc4e4a5b383bf6a1d09f1570acb6af9c53ac4940a14572d46423b6e3dd0c712e7802c986fb6be6",
+                    "url": "https://github.com/protocolbuffers/protobuf/releases/download/v31.0/protobuf-31.0.tar.gz",
+                    "sha512": "818807596b19424b56baa208594c45066d42faa66c1603b420c35e3d01d2e7d9e59ce9300d3d8bcb56d1e6d3580f6e7b3cc8e646385914b4a6552457912c98c5",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 3715,

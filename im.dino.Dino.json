@@ -1,7 +1,7 @@
 {
     "id": "im.dino.Dino",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "48",
+    "runtime-version": "49",
     "sdk": "org.gnome.Sdk",
     "command": "dino",
     "finish-args": [
@@ -93,12 +93,15 @@
         },
         {
             "name": "qrencode",
-            "buildsystem": "cmake-ninja",
+            "buildsystem": "autotools",
             "cleanup": [
                 "*"
             ],
+            "build-options": {
+                "cflags": "-fPIC"
+            },
             "config-opts": [
-                "-DCMAKE_C_FLAGS=-fPIC"
+                "--disable-shared"
             ],
             "sources": [
                 {
@@ -123,20 +126,16 @@
                 "/share/vala"
             ],
             "sources": [
-                {
+                 {
                     "type": "archive",
-                    "url": "https://github.com/dino/dino/releases/download/v0.5.0/dino-0.5.0.tar.gz",
-                    "sha512": "9cb6db27e6afd42204990c836019bc84a2a61af839d59cf8378520308d3016e6ac674ea4abd3044dfdf18e21e8431ef3cc85ad70d02c89d95c4dc702b32e05d2",
+                    "url": "https://github.com/dino/dino/releases/download/v0.5.1/dino-0.5.1.tar.gz",
+                    "sha512": "72b4d38963a8498a31cad0b3cee88856f1dfcf7b63669fead45c427377ff530a8a045bd88dbd35ce8f2b1b6265716389d0c40d97386a1105344e76e3c102f1f1",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 18608,
                         "stable-only": true,
                         "url-template": "https://github.com/dino/dino/releases/download/v$version/dino-$version.tar.gz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "AppData-Set-display_length-to-360.patch"
                 }
             ]
         }

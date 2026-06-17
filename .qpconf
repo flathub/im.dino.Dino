@@ -1,0 +1,8 @@
+#FPBUILD= #flatpak builder command 
+APP_ID=im.dino.Dino
+MANIFEST="${APP_ID}.json"
+#METAINFO= # for validating it
+
+source_gen() {
+  echo define ur source function here!!!
+}

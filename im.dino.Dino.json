@@ -1,7 +1,7 @@
 {
     "id": "im.dino.Dino",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "49",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
     "command": "dino",
     "finish-args": [
@@ -127,9 +127,9 @@
             ],
             "sources": [
                  {
-                    "type": "archive",
-                    "url": "https://github.com/dino/dino/releases/download/v0.5.1/dino-0.5.1.tar.gz",
-                    "sha512": "72b4d38963a8498a31cad0b3cee88856f1dfcf7b63669fead45c427377ff530a8a045bd88dbd35ce8f2b1b6265716389d0c40d97386a1105344e76e3c102f1f1",
+                    "type": "git",
+                    "url": "https://github.com/dino/dino.git",
+                    "commit": "45723ac201c1905571f9f78c8c970828db97139a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 18608,
